@@ -1,0 +1,225 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    padding: 20px;
+    animation: backgroundCycle 9s infinite;
+  }
+  
+  @keyframes backgroundCycle {
+    0%, 33.33% {
+      background: url('./images/image1.jpg') no-repeat center center/cover;
+    }
+    33.34%, 66.66% {
+      background: url('./images/image2.jpg') no-repeat center center/cover;
+    }
+    66.67%, 100% {
+      background: url('./images/image3.jpg') no-repeat center center/cover;
+    }
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Navbar */
+  nav {
+    background-color: #2d3b55;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ffbb33;
+  }
+  
+  /* Section Headers */
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffbb33;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease-in-out;
+  }
+  
+  h2:hover {
+    color: #2575fc;
+  }
+  
+  /* Add/Edit Stock Form */
+  form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  form:hover {
+    transform: scale(1.02);
+  }
+  
+  form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+  }
+  
+  form input:focus {
+    border-color: #2575fc;
+    background-color: #fff;
+    outline: none;
+  }
+  
+  form button {
+    width: 100%;
+    background-color: #2575fc;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #6a11cb;
+  }
+  
+  /* Stock List Table */
+  table {
+    width: 100%;
+    margin: 30px 0;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  table thead {
+    background-color: #2575fc;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  table th,
+  table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    font-size: 18px;
+  }
+  
+  table td {
+    font-size: 16px;
+  }
+  
+  table tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Stock Card */
+  .stock-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  }
+  
+  .stock-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stock-card h3 {
+    font-size: 1.8em;
+    color: #2575fc;
+    text-transform: capitalize;
+  }
+  
+  .stock-card p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .stock-card button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .stock-card button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* No Stock Message */
+  .no-stocks {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #888;
+    margin-top: 40px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  
+    table th, table td {
+      font-size: 14px;
+    }
+  
+    .stock-card {
+      margin: 10px 0;
+      padding: 15px;
+    }
+  }
+  
