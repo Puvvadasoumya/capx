@@ -2,7 +2,7 @@
   "name": "stock-portfolio-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Puvvadasoumya.github.io/Portfolio-Tracker",
+  "homepage": "https://Puvvadasoumya.github.io/PORTFOLIO",
   "dependencies": {
     "axios": "^1.7.9",
     "cra-template": "1.2.0",
